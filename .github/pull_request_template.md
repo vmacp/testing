@@ -1,8 +1,14 @@
-# Titre
+# Description
 
-## Sous titre
+[[ à compléter ]]
 
-- [ ] action 1
-- [ ] action 2
-- [ ] action 3
+* Issue associée : 
+* Incident associé :
+* Lien du dossier d'installation :
+
+# Vérifications
+
+- [ ] Les modifications apportées concernent un seul traitement
+- [ ] Tests d'intégration effectués
+- [ ] Recette validée
 
