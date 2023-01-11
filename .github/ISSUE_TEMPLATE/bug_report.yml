@@ -25,7 +25,7 @@ body:
       label: Description de l'anomalie
       description: Ainsi que description du comportement attendu
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "Pensez à inclure des captures d'écran !"
     validations:
       required: true
   - type: textarea
@@ -34,7 +34,7 @@ body:
       label: Comment reproduire l'anomalie ?
       description: Étapes pour reproduire l'anomalie sur environnement de développement
       placeholder: Tell us what you see!
-      value: "Step 1:"
+      value: "* Étape 1"
     validations:
       required: true
   - type: textarea
@@ -48,4 +48,4 @@ body:
     attributes:
       label: Log
       description: Merci d'indiquer les log pouvant être utiles.
-      render: shell
+      render: txt
