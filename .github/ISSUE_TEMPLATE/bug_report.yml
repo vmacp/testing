@@ -38,6 +38,12 @@ body:
     validations:
       required: true
   - type: textarea
+    id: cmd
+    attributes:
+      label: Commande d'exécution du traitement en anomalie
+      description: Commande Bash
+      render: bash
+  - type: textarea
     id: logs
     attributes:
       label: Log
