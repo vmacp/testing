@@ -28,6 +28,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: incident
+    attributes:
+      label: Incident associé
+      description: Référence OASIS
+      placeholder: INC0000000000
+    validations:
+      required: false
+  - type: textarea
     id: logs
     attributes:
       label: Log d'erreur initiale
@@ -37,7 +45,7 @@ body:
     id: analyse
     attributes:
       label: Analyse de l'anomalie
-      description: Description du comportement attendu VS comportement observé
+      description: Description du comportement observé VS comportement attendu
       placeholder: Pensez à inclure des captures d'écran !
     validations:
       required: true
@@ -45,9 +53,8 @@ body:
     id: reproduction
     attributes:
       label: Comment reproduire l'anomalie ?
-      description: Étapes pour reproduire l'anomalie sur environnement de développement
-      placeholder: Tell us what you see!
-      value: "* Étape 1"
+      description: Liste des actions permettant de reproduire le bug
+      placeholder: Étapes pour reproduire l'anomalie
     validations:
       required: true
   - type: textarea
