@@ -9,9 +9,9 @@ body:
     attributes:
       value: Merci de prendre le temps de renseigner ce formulaire.
   - type: dropdown
-    id: Environnement sur lequel l'anomalie a été constatée
+    id: environnement
     attributes:
-      label: Environnement
+      label: Environnement sur lequel l'anomalie a été constatée
       description: Sur quel environnement l'anomalie a-t-elle été décelée ?
       options:
         - dev
