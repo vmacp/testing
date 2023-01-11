@@ -14,15 +14,29 @@ body:
       label: Environnement sur lequel l'anomalie a été constatée
       description: Sur quel environnement l'anomalie a-t-elle été décelée ?
       options:
-        - dev
-        - rec
-        - prod
+        - Dev
+        - Rec
+        - Prod
     validations:
       required: true
   - type: textarea
+    id: identification
+    attributes:
+      label: Nom du traitement en anomalie
+      description: Par exemple code flux
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log d'erreur initiale
+      description: Merci d'indiquer les log pouvant être utiles.
+      render: txt
+  - type: textarea
     id: description
     attributes:
-      label: Description de l'anomalie
+      label: Analyse de l'anomalie
       description: Ainsi que description du comportement attendu
       placeholder: Tell us what you see!
       value: "Pensez à inclure des captures d'écran !"
@@ -43,9 +57,3 @@ body:
       label: Commande d'exécution du traitement en anomalie
       description: Commande Bash
       render: bash
-  - type: textarea
-    id: logs
-    attributes:
-      label: Log
-      description: Merci d'indiquer les log pouvant être utiles.
-      render: txt
