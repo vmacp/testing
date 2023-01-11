@@ -8,17 +8,8 @@ body:
   - type: markdown
     attributes:
       value: Merci de prendre le temps de renseigner ce formulaire.
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: Description de l'anomalie
-      description: Ainsi que description du comportement attendu
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
   - type: dropdown
-    id: Environnement
+    id: Environnement sur lequel l'anomalie a été constatée
     attributes:
       label: Environnement
       description: Sur quel environnement l'anomalie a-t-elle été décelée ?
@@ -26,6 +17,23 @@ body:
         - dev
         - rec
         - prod
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description de l'anomalie
+      description: Ainsi que description du comportement attendu
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Comment reproduire l'anomalie ?
+      description: Étapes pour reproduire l'anomalie sur environnement de développement
+      placeholder: Tell us what you see!
     validations:
       required: true
   - type: textarea
