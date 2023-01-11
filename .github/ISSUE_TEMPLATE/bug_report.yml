@@ -24,22 +24,21 @@ body:
     attributes:
       label: Nom du traitement en anomalie
       description: Par exemple code flux
-      placeholder: Tell us what you see!
+      placeholder: Code flux
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Log d'erreur initiale
-      description: Merci d'indiquer les log pouvant être utiles.
+      description: Par exemple log Automator
       render: txt
   - type: textarea
-    id: description
+    id: analyse
     attributes:
       label: Analyse de l'anomalie
-      description: Ainsi que description du comportement attendu
-      placeholder: Tell us what you see!
-      value: "Pensez à inclure des captures d'écran !"
+      description: Description du comportement attendu VS comportement observé
+      placeholder: Pensez à inclure des captures d'écran !
     validations:
       required: true
   - type: textarea
