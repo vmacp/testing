@@ -38,7 +38,7 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Log d'erreur initiale
+      label: Log initiale
       description: Par exemple log Automator
       render: txt
   - type: textarea
