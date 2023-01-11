@@ -8,12 +8,33 @@ body:
   - type: markdown
     attributes:
       value: Merci de prendre le temps de renseigner ce formulaire.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Traitement concerné
+      description: Traitement à faire évoluer
+      options:
+        - TIG
+        - TPG
+        - TEG
+        - Ingest spécifique Talend
+        - Produce spécifique Dataiku
+        - Autre
+    validations:
+      required: true
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
       label: Description
       description: En quoi le projet peut être amélioré
-      placeholder: Tell us what you see!
-      value: "Description"
+      placeholder: Description
     validations:
       required: true
+  - type: textarea
+    id: step
+    attributes:
+      label: Mise en œuvre
+      description: Étapes de mise en œuvre de l'amélioration
+      placeholder: Description
+    validations:
+      required: false
