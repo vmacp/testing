@@ -28,6 +28,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: version
+    attributes:
+      label: Version du traitement en anomalie
+      description: Version du job Talend / nom du bundle Dataiku
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: textarea
     id: incident
     attributes:
       label: Incident / Problème associé
