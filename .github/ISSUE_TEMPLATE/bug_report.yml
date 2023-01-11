@@ -22,9 +22,9 @@ body:
   - type: textarea
     id: identification
     attributes:
-      label: Nom du traitement en anomalie
-      description: Par exemple code flux
-      placeholder: Code flux
+      label: Référence du traitement en anomalie
+      description: Par exemple code flux, ou encore nom d'un job générique
+      placeholder: Référence du traitement
     validations:
       required: true
   - type: textarea
