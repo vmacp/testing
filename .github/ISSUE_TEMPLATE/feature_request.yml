@@ -11,7 +11,7 @@ body:
   - type: dropdown
     id: type
     attributes:
-      label: Traitement concerné
+      label: Type de traitement concerné
       description: Traitement à faire évoluer
       options:
         - TIG
@@ -24,6 +24,14 @@ body:
         - Ingest spécifique Talend
         - Produce spécifique Dataiku
         - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: traitement
+    attributes:
+      label: Référence du traitement
+      description: Par exemple code flux, ou encore nom d'un job générique
+      placeholder: Référence du traitement
     validations:
       required: true
   - type: textarea
